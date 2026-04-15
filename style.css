@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at top left, #111111, #0a0a0a 70%);
+}
+
+/* Main container */
+.container {
+    background: linear-gradient(145deg, #1f1f1f, #141414);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.8), inset -2px -2px 10px rgba(255,255,255,0.05);
+    width: 350px;
+}
+
+/* Display screen */
+input#displayScreen {
+    background: #ffffff;  /* White screen */
+    color: #111111;       /* Dark text */
+    text-align: right;
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    font-size: 28px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: inset -4px -4px 8px rgba(0,0,0,0.1), inset 4px 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Common button styles */
+button {
+    background-color: #24242f;
+    color: #00e5ff;
+    font-size: 24px;
+    padding: 20px 0;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.7), inset -2px -2px 6px rgba(255,255,255,0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(145deg, #2b2b3c, #24242f);
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.85), inset -2px -2px 6px rgba(255,255,255,0.08);
+}
+
+/* Clear button style */
+.clear {
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+/* Equal button style */
+.equal {
+    grid-column: span 2;
+    background: linear-gradient(145deg, #00e5ff, #00bcd4);
+    color: #111111;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.8), inset -2px -2px 6px rgba(255,255,255,0.15);
+}
+
+.equal:hover {
+    background: linear-gradient(145deg, #00bcd4, #00e5ff);
+}
